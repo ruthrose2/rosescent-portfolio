@@ -1,0 +1,68 @@
+:root{--wine:#5B1A2E;--rose:#D9738A;--blush:#FFF4F4;--gold:#C9A66B;--ink:#2A1A20}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--blush);line-height:1.6}
+h1,h2,h3,.logo{font-family:'Playfair Display',serif}
+img{max-width:100%;display:block}a{color:var(--wine)}
+.wrap{width:min(1100px,92%);margin:auto}.sec{padding:3.5rem 0}.center{text-align:center;margin-top:2rem}
+
+/* Navbar */
+.nav{position:sticky;top:0;z-index:10;background:var(--wine);display:flex;align-items:center;justify-content:space-between;padding:.8rem 4%}
+.logo{color:#fff;font-size:1.6rem;text-decoration:none;font-weight:700}.logo span{color:var(--gold)}
+.nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+.nav li a{color:#f3d9de;text-decoration:none;font-weight:600}
+.nav li a:hover,.nav li a.on{color:var(--gold)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--gold);color:var(--wine);padding:.7rem 1.4rem;border:0;border-radius:2rem;font-weight:700;text-decoration:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#dbb97c}.btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
+
+/* Hero and page headers */
+.hero{background:linear-gradient(135deg,var(--wine),#8A2D4A);color:#fff;padding:6rem 0}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);margin:.3rem 0;line-height:1.05}
+.hero em{color:var(--gold)}.tag{text-transform:uppercase;letter-spacing:.2em;font-size:.8rem;color:var(--gold)}
+.lead{max-width:32rem;color:#f3d9de;margin-bottom:1.5rem}
+.phead{background:var(--wine);color:#fff;padding:3rem 0}.phead h1{margin:0}.phead p{color:#f3d9de;margin:.3rem 0 0}
+
+/* Product cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem}
+.card{background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 4px 18px rgba(91,26,46,.1);display:flex;flex-direction:column;transition:transform .2s}
+.card:hover{transform:translateY(-5px)}
+.card img{aspect-ratio:1;object-fit:cover;width:100%}
+.card .in{padding:1rem;display:flex;flex-direction:column;flex:1}
+.card small{color:var(--rose);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.card h3{margin:.2rem 0}.card p{margin:0 0 .8rem;font-size:.92rem;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center}
+.price{font-size:1.3rem;font-weight:700;color:var(--wine)}
+
+/* Filters, features, cart */
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem}
+.chip{border:2px solid var(--wine);background:#fff;color:var(--wine);padding:.4rem 1rem;border-radius:2rem;font-weight:600;cursor:pointer}
+.chip.on{background:var(--wine);color:#fff}
+.band{background:#fff;padding:3rem 0}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;text-align:center}
+.three b{font-size:2rem;color:var(--rose)}
+.cart{position:fixed;bottom:0;left:0;right:0;background:var(--wine);color:#fff;padding:.8rem 4%;display:flex;gap:1rem;align-items:center;justify-content:space-between;z-index:20}
+.link{background:none;border:0;color:#f3d9de;text-decoration:underline;cursor:pointer}
+
+/* Contact form */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem}
+form label{display:block;margin:.8rem 0 .2rem;font-weight:600}
+input,textarea{width:100%;padding:.7rem;border:2px solid #e3c9cf;border-radius:.5rem;font:inherit}
+.err{color:#b00020;display:none}.bad+.err{display:block}.bad{border-color:#b00020}
+.ok{background:#e6f4ea;padding:.8rem;border-radius:.5rem}
+
+/* Footer */
+footer{background:var(--ink);color:#d9c7cc;padding:3rem 0 1rem}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
+footer a{display:block;color:#d9c7cc;text-decoration:none}footer a:hover{color:var(--gold)}
+footer h3,footer h4{color:#fff;margin:0 0 .5rem}
+.copy{text-align:center;font-size:.85rem;margin-top:2rem}
+
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* Mobile menu */
+@media(max-width:700px){
+.burger{display:block}
+.nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--wine);flex-direction:column;padding:1rem 4%}
+.nav ul.open{display:flex}}

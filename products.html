@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Rosecents</title>
+<meta name="description" content="Rosecents: fragrances with prices in USD.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body>
+
+<nav class="nav"><a class="logo" href="index.html">Rose<span>cents</span></a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a class="on" href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li></ul></nav>
+
+<header class="phead"><div class="wrap"><h1>Our products</h1><p>All prices are in US dollars (USD).</p></div></header>
+
+<main class="wrap sec">
+<div class="filters" role="group" aria-label="Filter products">
+<button class="chip on" data-f="all">All</button>
+<button class="chip" data-f="Perfume">Perfumes</button>
+<button class="chip" data-f="Body mist">Body mists</button>
+<button class="chip" data-f="Gift set">Gift sets</button></div>
+<div class="grid" id="products"></div>
+</main>
+
+<aside class="cart" id="cart" hidden><span id="cartInfo"></span>
+<a class="btn" id="orderBtn" href="#">Order by email</a>
+<button class="link" id="clearBtn">Clear</button></aside>
+
+<footer><div class="wrap fgrid">
+<div><h3>Rosecents</h3><p>Beautiful fragrances for every moment.</p></div>
+<div><h4>Pages</h4><a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+<div><h4>Contact</h4><a href="mailto:roseruthnalubega@gmail.com">roseruthnalubega@gmail.com</a><a href="tel:07018435555">07018435555</a></div></div>
+<p class="copy">&copy; <span id="yr">2026</span> Rosecents. All rights reserved.</p></footer>
+<script src="js/main.js"></script></body></html>
