@@ -1,11 +1,11 @@
 // ===== PRODUCT DATA: edit names, prices (USD), categories and photos here =====
 const PRODUCTS=[
-{name:"Rose Noir",cat:"Perfume",price:45,img:"images/product1.svg",desc:"Deep rose with a warm musk base."},
-{name:"Velvet Petal",cat:"Perfume",price:38,img:"images/product2.svg",desc:"Soft peony, vanilla and cashmere."},
-{name:"Amber Dusk",cat:"Perfume",price:52,img:"images/product3.svg",desc:"Amber, sandalwood and a hint of spice."},
-{name:"Citrus Bloom",cat:"Body mist",price:18,img:"images/product4.svg",desc:"Fresh orange blossom, light and sparkling."},
-{name:"Rose Garden Mist",cat:"Body mist",price:20,img:"images/product5.svg",desc:"Everyday rose mist for all-day freshness."},
-{name:"Signature Gift Set",cat:"Gift set",price:75,img:"images/product6.svg",desc:"Perfume, body mist and travel spray in a box."}];
+{name:"Rose Noir",cat:"Perfume",price:45,img:"rose noir.jpg",desc:"Deep rose with a warm musk base."},
+{name:"Velvet Petal",cat:"Perfume",price:38,img:"velvet petal.jpg",desc:"Soft peony, vanilla and cashmere."},
+{name:"Amber Dusk",cat:"Perfume",price:52,img:"amber perfume.jpg",desc:"Amber, sandalwood and a hint of spice."},
+{name:"Citrus Bloom",cat:"Body mist",price:18,img:"citrus bloom.jpg",desc:"Fresh orange blossom, light and sparkling."},
+{name:"Rose Garden Mist",cat:"Body mist",price:20,img:"rose garden misr.jpg",desc:"Everyday rose mist for all-day freshness."},
+{name:"Signature Gift Set",cat:"Gift set",price:75,img:"signature gift set.jpg",desc:"Perfume, body mist and travel spray in a box."}];
 const EMAIL="roseruthnalubega@gmail.com";
 const usd=n=>"$"+n.toFixed(2)+" USD";
 
